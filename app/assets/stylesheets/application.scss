@@ -5,7 +5,8 @@
 @import "mixins/mixin";
 @import "mixins/vendor_prefix";
 @import "modules/side_bar";
+@import "modules/main_chat";
 @import "modules/chat";
 @import "modules/user";
-@import "messages/messages.scss";
+@import "messages/messages";
 @import "modules/flash";
