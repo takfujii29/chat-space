@@ -62,28 +62,30 @@
   .form {
     background-color: #ddd;
     padding: 20px 40px;
-    .message-form {
-      position: relative;
-      .login-input-text {
-        height: 50px;
-        width: 920px;
-        padding: 0 10px;
-        font-size: 16px;
-        color: $section-color;
-      }
-      .input-box__image {
+    height: 54px;
+    &__message {
+      float: left;
+      height: 50px;
+      width: 900px;
+      padding: 0 10px;
+      font-size: 16px;
+      color: $section-color;
+    }
+    &__mask {
+      &__image {
         font-size: 1.3rem;
-        position: absolute;
+        float: left;
         right: 128px;
         top: 10px;
       }
     }
-      .login-input-send {
-        background-color: #38AEF0;
-        height: 50px;
-        color: #ffffff;
-        padding: 0 20px;
-        margin-left: 15px;
-      }
+    &__submit {
+      float: right;
+      background-color: #38AEF0;
+      height: 50px;
+      color: #ffffff;
+      padding: 0 20px;
+      margin-left: 15px;
+    }
   }
 }
