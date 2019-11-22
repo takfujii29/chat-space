@@ -9,13 +9,7 @@
       Edit
 
   .chat
-    .chatdate
-      .chatdate__name
-        %b fujii
-      .chatdate__time
-        2019/11/17 20:20
-    .chat__message
-      this is a first message
+    = render @messages
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type  message'
