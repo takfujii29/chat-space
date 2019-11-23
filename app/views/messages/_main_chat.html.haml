@@ -2,9 +2,11 @@
   .main_header
     .main
       .main__groupname
-        group name
+        = @group.name
       .main__member
-        Member:
+        Member: 
+        = User.pluck(:name) #groupにいるユーザーの名前をだす（配列担っているので、配列を処理するメソッドを使う→ plack or ids）
+
     .edit
       Edit
 
