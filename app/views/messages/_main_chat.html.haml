@@ -5,10 +5,10 @@
         = @group.name
       .main__member
         Member: 
-        = User.pluck(:name) #groupにいるユーザーの名前をだす（配列担っているので、配列を処理するメソッドを使う→ plack or ids）
-
+        = User.pluck(:name) #groupにいるユーザーの名前をだす（配列担っているので、配列を処理するメソッドを使う→ pluck or ids）
     .edit
-      Edit
+      =link_to edit_group_path(@group) do
+        Edit
 
   .chat
     = render @messages
@@ -20,4 +20,3 @@
           = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden', style: 'display:none'
       = f.submit 'Send', class: 'form__submit'
-
