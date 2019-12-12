@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if (message.image) {
       var html = `<div class="chatdate__name">
-                    ${message.user_id}
+                    ${message.user_name}
                   </div>
                   <div class="chatdate__time">
                     ${message.created_at}
@@ -13,7 +13,7 @@ $(function(){
                   <img class="message__image" src="${message.image}">`
     } else {
       var html = `<div class="chatdate__name">
-                    ${message.user_id}
+                    ${message.user_name}
                   </div>
                   <div class="chatdate__time">
                     ${message.created_at}
