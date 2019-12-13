@@ -76,12 +76,6 @@ $(function(){
         })
         .done(function(messages) {
           var insertHTML = '';
-          // messages.forEach(function(message){
-          //   insertHTML = buildHTML (message);
-          //   $('.chat').append(insertHTML);
-          //   $('.chat').animate({ scrollTop: $('.chat')[0].scrollHeight});
-          //   console.log('リロード完了')
-          // })
           $.each(messages, function(i, message) {
             insertHTML += buildHTML (message)
             $('.chat').append(insertHTML);
