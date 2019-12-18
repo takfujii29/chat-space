@@ -30,9 +30,9 @@
     .edit {
       border: solid 1px #38AEF0;
       color: #38AEF0;
-      padding: 10px 20px 0 20px;
+      padding: 0 20px;
       height: 40px;
-      font-size: 20px;
+      line-height: 40px;
       margin-top: 28px;
     }
   }
@@ -41,16 +41,16 @@
     background-color: #fafafa;
     box-sizing: border-box;
     height: calc(100vh - 101px - 90px);
-    padding: 46px 40px 0;
+    padding: 46px 40px;
     overflow: scroll;
     
     .contents {
-      margin: 20px;
       .chatdate {
         &__name {
           font-size: 16px;
           color: $section-color;
           float: left;
+          margin-bottom: 10px;
         }
         &__time {
           font-size: 12px;
@@ -60,13 +60,17 @@
         }
       }
       .message  {
+        margin-bottom: 10px;
         font-size: 14px;
         color: $section-color;
         clear: both;
         &__content {
           font-size: 14px;
           color: $section-color;
-          padding-top: 10px;
+          clear: both;
+        }
+        &__image {
+          display: block;
           clear: both;
         }
       }

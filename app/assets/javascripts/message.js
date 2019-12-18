@@ -11,7 +11,7 @@ $(function(){
                     <p class="message__content">
                       ${message.content}
                     </p>
-                    <img class="message__image" src="${message.image}">
+                      <img class="message__image" src="${message.image}">
                  </div>`
     } else if (message.content) {
       var html = `<div class="contents" data-message-id="${message.id}" >
@@ -33,7 +33,7 @@ $(function(){
                     <div class="chatdate__time">
                       ${message.created_at}
                     </div>
-                    <img class="message__image" src="${message.image}">
+                      <img class="message__image" src="${message.image}">
                   </div>`
     };
     return html;
